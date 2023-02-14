@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/rollout.css">
+
+    <title>Mini Portfólio - Luis Vinicius</title>
+</head>
+
+<body>
+    <main class="card">
+        <div class="my-info">
+            <img class="photo" src="./src/imagens/foto.jpg" alt="perfil photo">
+            <h1 class="name">Luis Vinicius</h1>
+            <h2 class="cargo"> Beginner Front-end Developer</h2>
+        </div>
+
+        <div class="content">
+            <ul class="tabs">
+                <li class="tab selected" id="about-me">
+                    <img src="./src/imagens/aboutme.gif" alt="about me">
+                </li>
+                <li class="tab" id="social-medias">
+                    <img src="./src/imagens/socialmedias.gif" alt="social medias">
+                </li>
+                <li class="tab" id="projects">
+                    <img src="./src/imagens/projects.gif" alt="projects">
+                </li>
+            </ul>
+
+            <div class="tabs-info">
+                <div class="info selected" id="info-about-me">
+                    <h3 class="sub-title">Sobre mim</h3>
+                    <div class="description">
+                        <p>Oi! eu me chamo Luis Vinicius, seja <br> <span>bem-vindo(a)!</span> </p>
+
+                        <p>
+                            Sempre tive um grandíssimo interesse pela área tecnológica e durante o ensino médio
+                            descobri a programação, desde então obtive o sonho de trabalhar como desenvolvedor.
+                            Recentemente comecei a colocar esse sonho em prática estudando <span2>HTML, CSS e 
+                            JavaScript.</span2> Atualmente tenho 20 anos, gosto muito de café, aproveitar um 
+                            tempo com minha namorada, curtir com amigos e assistir séries/filmes.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="info" id="info-social-medias">
+                    <h3 class="sub-title">Minhas redes</h3>
+
+                    <ul class="social-medias">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1Gv-bVNiPxM48nr3x559WcB7z5EJ_uEf1/view?usp=sharing"
+                                target="_blank" class="curriculo">Currículo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/luis-vinicius
+                        -gomes-silva-716024155/" target="_blank" class="linkedin">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com" target="_blank" class="github">Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info" id="projects">
+                    <h3 class="sub-title">Meus Projetos</h3>
+                        <p> [LOADING...]</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

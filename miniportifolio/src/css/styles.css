@@ -1,0 +1,177 @@
+body {
+    background-image: url(../imagens/neonbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: "VT323", monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.card {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #ff00b3;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: neoncard 3s alternate infinite ease-in-out;
+    --neon-card: #ff00b3;
+    opacity: 90%;
+
+}
+
+@keyframes neoncard {
+    from {
+        filter: drop-shadow(0 0 0 var(--neon-card));
+    }
+
+    to {
+        filter: drop-shadow(0 0 30px var(--neon-card));
+    }
+}
+
+.card .my-info {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 2px solid #265ad2;
+    animation: neonphoto 3s alternate infinite ease-in-out;
+    --neon-photo: #00b7ff;
+}
+
+@keyframes neonphoto {
+    from {
+        filter: drop-shadow(0 0 0 var(--neon-photo));
+    }
+
+    to {
+        filter: drop-shadow(0 0 13px var(--neon-photo));
+    }
+}
+
+
+.card .my-info .name {
+    font-size: 26px;
+    box-shadow: 50%;
+}
+
+.card .my-info .cargo {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.card .content {
+    margin-top: 15px;
+}
+
+.card .tabs {
+    display: flex;
+}
+
+.card .tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .tabs img {
+    width: 30px;
+}
+
+.card .tabs .tab.selected {
+    background-color: #101920;
+}
+
+.card .tabs-info {
+    background-color: #101920;
+}
+
+.card .tabs .tab:hover {
+    background-color: #30525ec9;
+}
+
+.tabs-info .info {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.tabs-info .info.selected {
+    display: block;
+}
+
+.tabs-info .sub-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.tabs-info .description {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.tabs-info .description span {
+    color: #00b7ff;
+}
+
+.tabs-info .description span2 {
+    color: #02d08f;
+}
+
+.tabs-info .description span3 {
+    color: red
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.social-medias li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-medias li a:hover {
+    opacity: 0.5;
+}
+
+.social-medias .curriculo {
+    background-color: #06c185;
+}
+
+.social-medias .linkedin {
+    background-color: #1d87bd;
+}
+
+.social-medias .github {
+    background-color: #545454;
+}
